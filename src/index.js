@@ -128,6 +128,7 @@ class App extends Component {
     for (let item of this.state.massBasketElem) {
       count += +item.count;
     }
+    console.log(JSON.stringify(this.state.massBasketElem));
     return count;
   };
 
