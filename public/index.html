@@ -1,43 +1,655 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Дым Шашлык</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <header class="header">
+      <img class="header__img" src="images/meat-header.png" alt="meat images" />
+      <div class="container">
+        <div class="header__top">
+          <button class="header__btn-menu">
+            <span></span>
+          </button>
+          <a
+            class="header__social-link"
+            href="https://vk.com/public211432689"
+            target="_blank"
+          >
+            <img
+              class="header__social-img"
+              src="images/icons/vk.svg"
+              alt="vk icon"
+            />
+          </a>
+          <a
+            class="header__social-link deeplink"
+            href="https://instagram.com/dim_shashlik_ximki"
+            target="_blank"
+          >
+            <img
+              class="header__social-img"
+              src="images/icons/instagram.svg"
+              alt="instagram icon"
+            />
+          </a>
+          <div class="header__mobile">
+            <a class="header__mobile-img" href="tel:+79659898988">
+              <img
+                class="header__social-img"
+                src="images/icons/smartphone.svg"
+                alt="smartphone icon"
+              />
+            </a>
+            <a class="phone" href="tel:+79659898988">+7 (965) 989-89-88</a>
+            <p class="header__mobile-text">Круглосуточно</p>
+          </div>
+          <!-- <div class="basket-btn" style="display: none">
+            <img
+              class="basket-btn__inner"
+              src="images/icons/basket.svg"
+              alt="basket"
+            />
+            <div class="basket__count-items">
+              <p class="basket__count-text">2</p>
+            </div> -->
+          </div>
+        </div>
+        <div class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#menu">МЕНЮ</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#useful">ПОЛЕЗНО</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#galery">ГАЛЕРЕЯ</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#delivery">ДОСТАВКА</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#reviews">ОТЗЫВЫ</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#where">ГДЕ&nbspМЫ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__content">
+          <h1 class="header__title">ДЫМ ШАШЛЫК</h1>
+          <p class="header__subtitle">Любовь с первого шампура</p>
+          <a class="header__phone" href="tel:+79659898988">Позвонить</a>
+        </div>
+      </div>
+    </header>
+    <section class="menu" id="menu"></section>
+    <section class="top-food">
+      <div class="top-food__line"></div>
+      <p class="top-food__title">ТОП БЛЮД</p>
+      <div class="container">
+        <div class="courusel__inner">
+          <div class="courusel__item">
+            <div class="menu__item">
+              <img src="images/fish/1.png" alt="fish" class="menu__item-img" />
+              <h3 class="menu__item-title">ФОРЕЛЬ1</h3>
+              <p class="menu__item-price">650</p>
+              <button class="menu__item-btn">В КОРЗИНУ</button>
+            </div>
+          </div>
+          <div class="courusel__item">
+            <div class="menu__item">
+              <img src="images/fish/1.png" alt="fish" class="menu__item-img" />
+              <h3 class="menu__item-title">ФОРЕЛЬ2</h3>
+              <p class="menu__item-price">650</p>
+              <button class="menu__item-btn">В КОРЗИНУ</button>
+            </div>
+          </div>
+          <div class="courusel__item">
+            <div class="menu__item">
+              <img src="images/fish/1.png" alt="fish" class="menu__item-img" />
+              <h3 class="menu__item-title">ФОРЕЛЬ3</h3>
+              <p class="menu__item-price">650</p>
+              <button class="menu__item-btn">В КОРЗИНУ</button>
+            </div>
+          </div>
+          <div class="courusel__item">
+            <div class="menu__item">
+              <img src="images/fish/1.png" alt="fish" class="menu__item-img" />
+              <h3 class="menu__item-title">ФОРЕЛЬ4</h3>
+              <p class="menu__item-price">650</p>
+              <button class="menu__item-btn">В КОРЗИНУ</button>
+            </div>
+          </div>
+          <div class="courusel__item">
+            <div class="menu__item">
+              <img src="images/fish/1.png" alt="fish" class="menu__item-img" />
+              <h3 class="menu__item-title">ФОРЕЛЬ5</h3>
+              <p class="menu__item-price">650</p>
+              <button class="menu__item-btn">В КОРЗИНУ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="delivery" id="delivery">
+      <div class="container">
+        <div class="delivery__tittle">
+          <p class="title-text">Доставка</p>
+        </div>
+        <div class="delivery__inner">
+          <div class="delivery__item">
+            <img
+              src="./images/icons/icon-money.svg"
+              alt="icon"
+              class="delivery__icon"
+            />
+            <p class="delivery__text">
+              Оплата наличными или по карте при доставке
+            </p>
+          </div>
+          <div class="delivery__item">
+            <img
+              src="./images/icons/icon-delivery.svg"
+              alt="icon"
+              class="delivery__icon"
+            />
+            <p class="delivery__text">
+              Оплата наличными или по карте при доставке
+            </p>
+          </div>
+          <div class="delivery__item">
+            <img
+              src="./images/icons/icon-terminal.svg"
+              alt="icon"
+              class="delivery__icon"
+            />
+            <p class="delivery__text">
+              Оплата наличными или по карте при доставке
+            </p>
+          </div>
+          <div class="delivery__item">
+            <img
+              src="./images/icons/icon-store.svg"
+              alt="icon"
+              class="delivery__icon"
+            />
+            <p class="delivery__text">
+              Оплата наличными или по карте при доставке
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="useful" id="useful">
+      <img src="images/shashlik.png" alt="shashlik" class="useful-img" />
+      <div class="container">
+        <div class="useful__tittle">
+          <p class="title-text">Полезно</p>
+        </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+        <div class="useful__item-container">
+          <div class="useful__item">
+            <img
+              src="./images/icons/icon-heart.svg"
+              alt="icon"
+              class="useful__icon"
+            />
+            <p class="useful__text">
+              Правильно приготовленный шашлык СНИЖАЕТ риск возникновения
+              сердечно-сосудистых заболеваний и артрита
+            </p>
+          </div>
+          <div class="useful__item">
+            <img
+              src="./images/icons/icon-vitamins.svg"
+              alt="icon"
+              class="useful__icon"
+            />
+            <p class="useful__text">
+              Мясо, правильно приготовленное на углях, сохраняет большие
+              ВИТАМИНОВ и МИКРОЭЛЕМЕНТОВ, полезных для человека, чем обычное
+              жареное мясо
+            </p>
+          </div>
+          <div class="useful__item">
+            <img
+              src="./images/icons/icon-diet.svg"
+              alt="icon"
+              class="useful__icon"
+            />
+            <p class="useful__text">
+              В мясе, приготовленном на углях, МЕНЬШЕ калорий, чем в жареном.
+              Кстати, настоящий шашлык – это совершенно ДИЕТИЧЕСКОЕ блюдо, так
+              как оно запекается, а не жарится
+            </p>
+          </div>
+          <div class="useful__item">
+            <img
+              src="./images/icons/icon-hand.svg"
+              alt="icon"
+              class="useful__icon"
+            />
+            <p class="useful__text">
+              Мы готовим мясо ПРАВИЛЬНО и самое главное с ЛЮБОВЬЮ
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="galery" id="galery">
+      <div class="container">
+        <div class="galery__title">
+          <p class="title-text">Галерея</p>
+        </div>
+      </div>
+      <div class="courusel__galery">
+        <div class="galery__courusel-item">
+          <img
+            src="images/galery/galery-vitrina.png"
+            alt="shop"
+            class="galery__img"
+          />
+        </div>
+        <div class="galery__courusel-item">
+          <img
+            src="images/galery/galery-fish.png"
+            alt="vitrina"
+            class="galery__img"
+          />
+        </div>
+        <div class="galery__courusel-item">
+          <img
+            src="images/galery/galery-shop.png"
+            alt="fish"
+            class="galery__img"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="reviews__title">
+          <p class="title-text">Отзывы</p>
+        </div>
+      </div>
+      <div class="courusel__reviews">
+        <div class="reviews__courusel-wrapper">
+          <div class="reviews__courusel-item">
+            <div class="reviews__speech-bubble">
+              <p class="reviews__text">
+                Спасибо большое! Очень вкусный шашлык! Я первый раз сегодня
+                купила , а попробовали !!!!! Просто супер! Жаль что в Тушино
+                такого кафе нет!
+              </p>
+              <img
+                src="images/reviews/stars.svg"
+                alt="stars"
+                class="reviews__stars"
+              />
+            </div>
+            <div class="reviews__author">
+              <div class="reviews__author-div-img">
+                <img
+                  src="images/reviews/reviewier_1.jpg"
+                  alt="reviewier"
+                  class="reviews__author-img"
+                />
+              </div>
+              <div class="reviews__author-info">
+                <p class="reviews__author-name">Юлия Г.</p>
+                <p class="reviews__date">17.09.2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__courusel-wrapper">
+          <div class="reviews__courusel-item">
+            <div class="reviews__speech-bubble">
+              <p class="reviews__text">
+                Спасибо большое! Очень вкусный шашлык! Я первый раз сегодня
+                купила , а попробовали !!!!! Просто супер! Жаль что в Тушино
+                такого кафе нет!
+              </p>
+              <img
+                src="images/reviews/stars.svg"
+                alt="stars"
+                class="reviews__stars"
+              />
+            </div>
+            <div class="reviews__author">
+              <div class="reviews__author-div-img">
+                <img
+                  src="images/reviews/reviewier_1.jpg"
+                  alt="reviewier"
+                  class="reviews__author-img"
+                />
+              </div>
+              <div class="reviews__author-info">
+                <p class="reviews__author-name">Юлия Г.</p>
+                <p class="reviews__date">17.09.2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__courusel-wrapper">
+          <div class="reviews__courusel-item">
+            <div class="reviews__speech-bubble">
+              <p class="reviews__text">
+                Спасибо большое! Очень вкусный шашлык! Я первый раз сегодня
+                купила , а попробовали !!!!! Просто супер! Жаль что в Тушино
+                такого кафе нет!
+              </p>
+              <img
+                src="images/reviews/stars.svg"
+                alt="stars"
+                class="reviews__stars"
+              />
+            </div>
+            <div class="reviews__author">
+              <div class="reviews__author-div-img">
+                <img
+                  src="images/reviews/reviewier_1.jpg"
+                  alt="reviewier"
+                  class="reviews__author-img"
+                />
+              </div>
+              <div class="reviews__author-info">
+                <p class="reviews__author-name">Юлия Г.</p>
+                <p class="reviews__date">17.09.2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="where" id="where">
+      <div class="container">
+        <div class="where__title">
+          <p class="title-text">Где мы</p>
+        </div>
+        <div class="where__map" style="position: relative; overflow: hidden">
+          <a
+            href="https://yandex.ru/maps/org/dym_shashlyk/188245452307/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+            >Дым-Шашлык</a
+          ><a
+            href="https://yandex.ru/maps/10758/himki/category/cafe/184106390/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+            >Кафе в Химках</a
+          ><a
+            href="https://yandex.ru/maps/10758/himki/category/fast_food/184106386/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 28px"
+            >Быстрое питание в Химках</a
+          ><iframe
+            src="https://yandex.ru/map-widget/v1/-/CCUZqWvE8D"
+            width="560"
+            height="400"
+            frameborder="1"
+            allowfullscreen="true"
+            style="position: relative"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="basket">
+      <div class="basket__bg"></div>
+      <div class="basket__inner">
+        <div class="basket__header">
+          <p class="basket__title">КОРЗИНА</p>
+          <button class="basket__close-btn">
+            ЗАКРЫТЬ
+            <svg width="15" height="15" viewBox="0 0 25 25" fill="none">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9.61 12.199L.54 3.129A1.833 1.833 0 113.13.536l9.07 9.07L21.27.54a1.833 1.833 0 012.592 2.592l-9.068 9.068 9.07 9.07a1.833 1.833 0 01-2.59 2.592l-9.072-9.07-9.073 9.073a1.833 1.833 0 01-2.591-2.592L9.61 12.2z"
+                fill="#fff"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="basket__items">
+          <div class="basket__item">
+            <div class="basket__item-img-wrapper">
+              <img
+                src="images/fish/1.png"
+                alt="order"
+                class="basket__item-img"
+              />
+            </div>
+            <div class="basket__item-wrapper">
+              <p class="basket__item-title">ФОРЕЛЬ</p>
+              <div class="basket__item-btn-wrapper">
+                <button class="basket__item-btn minus">
+                  <svg width="10" height="10" viewBox="0 0 10 10" class="icon">
+                    <rect fill="#fff" y="4" width="10" height="2" rx="1"></rect>
+                  </svg>
+                </button>
+                <p class="basket__item-btn-count">1</p>
+                <button class="basket__item-btn plus">
+                  <svg width="10" height="10" viewBox="0 0 10 10" class="icon">
+                    <g fill="#fff">
+                      <rect x="4" width="2" height="10" ry="1"></rect>
+                      <rect y="4" width="10" height="2" rx="1"></rect>
+                    </g>
+                  </svg>
+                </button>
+              </div>
+              <p class="basket__item-price">1 x <span>650 p</span> / 250 гр.</p>
+            </div>
+            <button class="basket__item-del">
+              <svg
+                class="basket__item-del-svg"
+                width="14"
+                height="14"
+                viewBox="0 0 25 25"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.61 12.199L.54 3.129A1.833 1.833 0 113.13.536l9.07 9.07L21.27.54a1.833 1.833 0 012.592 2.592l-9.068 9.068 9.07 9.07a1.833 1.833 0 01-2.59 2.592l-9.072-9.07-9.073 9.073a1.833 1.833 0 01-2.591-2.592L9.61 12.2z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="basket__item">
+            <div class="basket__item-img-wrapper">
+              <img
+                src="images/fish/1.png"
+                alt="order"
+                class="basket__item-img"
+              />
+            </div>
+            <div class="basket__item-wrapper">
+              <p class="basket__item-title">ФОРЕЛЬ</p>
+              <div class="basket__item-btn-wrapper">
+                <button class="basket__item-btn minus">
+                  <svg width="10" height="10" viewBox="0 0 10 10" class="icon">
+                    <rect fill="#fff" y="4" width="10" height="2" rx="1"></rect>
+                  </svg>
+                </button>
+                <p class="basket__item-btn-count">1</p>
+                <button class="basket__item-btn plus">
+                  <svg width="10" height="10" viewBox="0 0 10 10" class="icon">
+                    <g fill="#fff">
+                      <rect x="4" width="2" height="10" ry="1"></rect>
+                      <rect y="4" width="10" height="2" rx="1"></rect>
+                    </g>
+                  </svg>
+                </button>
+              </div>
+              <p class="basket__item-price">1 x <span>650 p</span> / 250 гр.</p>
+            </div>
+            <button class="basket__item-del">
+              <svg
+                class="basket__item-del-svg"
+                width="14"
+                height="14"
+                viewBox="0 0 25 25"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.61 12.199L.54 3.129A1.833 1.833 0 113.13.536l9.07 9.07L21.27.54a1.833 1.833 0 012.592 2.592l-9.068 9.068 9.07 9.07a1.833 1.833 0 01-2.59 2.592l-9.072-9.07-9.073 9.073a1.833 1.833 0 01-2.591-2.592L9.61 12.2z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="basket__delivery">
+          <p class="basket__delivery-title">Информация по доставке</p>
+          <div class="basket__delivery-info">
+            <p class="basket__delivery-count"><span> 6 </span> позиций</p>
+            <div class="basket__delivery-sum">
+              <p class="basket__delivery-sum-title">Сумма заказа</p>
+              <p class="basket__delivery-sum-count"><span>5000</span> Р</p>
+            </div>
+          </div>
+        </div>
+        <form class="basket__form">
+          <div class="basket__form-adress field">
+            <label for="adress">Адрес:</label>
+            <input
+              type="text"
+              id="adress"
+              name="adress_name"
+              value=""
+              required
+            />
+          </div>
+          <div class="basket__form-tel">
+            <label for="telefon">Телефон (через +7 без пробелов):</label>
+            <input
+              value="+7"
+              type="text"
+              id="telefon"
+              name="telefon_name"
+              required
+              pattern="\+7[0-9]{10}"
+            />
+          </div>
+          <div class="basket__form-time">
+            <label>Привести к:</label>
+            <button type="button" class="basket__delivery-time">
+              как можно скорее
+            </button>
+          </div>
+          <div class="basket__form-button">
+            <button type="submit">Оформить заказ</button>
+          </div>
+        </form>
+      </div>
+    </section> -->
+    <footer class="footer">
+      <div class="container">
+        <div class="header__top">
+          <a class="footer__logo" href="#">
+            <img
+              class="footer__logo-img"
+              src="images/logo-footer.png"
+              alt="logo"
+            />
+          </a>
+          <a
+            class="header__social-link"
+            href="https://vk.com/public211432689"
+            target="_blank"
+          >
+            <img
+              class="header__social-img"
+              src="images/icons/vk.svg"
+              alt="vk icon"
+            />
+          </a>
+          <a
+            class="header__social-link"
+            href="https://instagram.com/dim_shashlik_ximki"
+            target="_blank"
+          >
+            <img
+              class="header__social-img"
+              src="images/icons/instagram.svg"
+              alt="instagram icon"
+            />
+          </a>
+          <div class="header__mobile">
+            <a class="header__mobile-img" href="tel:+79659898988">
+              <img
+                class="header__social-img"
+                src="images/icons/smartphone.svg"
+                alt="smartphone icon"
+              />
+            </a>
+            <a class="phone" href="tel:+79659898988">+7 (965) 989-89-88</a>
+            <p class="header__mobile-text">Круглосуточно</p>
+          </div>
+        </div>
+        <div class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#menu">МЕНЮ</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#useful">ПОЛЕЗНО</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#galery">ГАЛЕРЕЯ</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#delivery">ДОСТАВКА</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#reviews">ОТЗЫВЫ</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#where">ГДЕ&nbspМЫ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__date">2022</p>
+          <a href="https://t.me/FV_ladimir" target="_blank" class="logo__fen">
+            Created by
+            <img
+              src="images/logo-fen.jpg"
+              alt="logo fen"
+              class="logo__fen-img"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.fias.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
