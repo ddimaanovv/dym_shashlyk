@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class CategoryItem extends Component {
   render() {
-    const { item, onElemCkick } = this.props;
+    const { item, onElemCkick, activeCategory } = this.props;
     return (
       <li className="menu__category">
         <div onClick={onElemCkick} className="menu__category-item">
@@ -11,11 +11,20 @@ class CategoryItem extends Component {
             alt={item.category}
             className="menu__category-img"
           />
-          <p className="menu__category-text">{item.category}</p>
+          <p className={this.activeHandler(item.category, activeCategory)}>
+            {item.category}
+          </p>
         </div>
       </li>
     );
   }
+  activeHandler = (category, activeCategory) => {
+    let classTxt =
+      category == activeCategory
+        ? "menu__category-text active"
+        : "menu__category-text";
+    return classTxt;
+  };
 }
 
 export default CategoryItem;

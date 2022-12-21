@@ -15,6 +15,7 @@ class App extends Component {
     ),
     massMenuCategory: massCategoryItem,
     massBasketElem: [],
+    activeCategory: massCategoryItem[0].category,
   };
   render() {
     const menuItemElement = this.state.massMenuItem.map((item) => (
@@ -22,6 +23,8 @@ class App extends Component {
         key={item.id}
         item={item}
         onElemCkick={this.menuItemHandler.bind(this, item)}
+        onMinusCkick={this.menuMinusHandler.bind(this, item)}
+        onPlusCkick={this.menuItemHandler.bind(this, item)}
       />
     ));
     const menuCategoryItem = this.state.massMenuCategory.map((item) => (
@@ -29,6 +32,7 @@ class App extends Component {
         key={item.id}
         item={item}
         onElemCkick={this.categoryClickHandler.bind(this, item.category)}
+        activeCategory={this.state.activeCategory}
       />
     ));
     const basketElement = this.state.massBasketElem.map((item) => (
@@ -44,14 +48,14 @@ class App extends Component {
     return (
       <div>
         <div className="container">
-          <div class="basket-btn">
+          <div className="basket-btn">
             <img
-              class="basket-btn__inner"
+              className="basket-btn__inner"
               src="images/icons/basket.svg"
               alt="basket"
             />
-            <div class="basket__count-items">
-              <p class="basket__count-text">{this.countBasket()}</p>
+            <div className="basket__count-items">
+              <p className="basket__count-text">{this.countBasket()}</p>
             </div>
           </div>
           <div className="menu__title">
@@ -64,42 +68,44 @@ class App extends Component {
             <div className="menu__items">{menuItemElement}</div>
           </div>
         </div>
-        <section class="basket">
-          <div class="basket__bg"></div>
-          <div class="basket__inner">
-            <div class="basket__header">
-              <p class="basket__title">КОРЗИНА</p>
-              <button class="basket__close-btn">
-                ЗАКРЫТЬ
+        <section className="basket">
+          <div className="basket__bg"></div>
+          <div className="basket__inner">
+            <div className="basket__header">
+              <p className="basket__title">КОРЗИНА</p>
+              <button className="basket__close-btn">
+                ЗАКРЫТЬ&#160;
                 <svg width="15" height="15" viewBox="0 0 25 25" fill="none">
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M9.61 12.199L.54 3.129A1.833 1.833 0 113.13.536l9.07 9.07L21.27.54a1.833 1.833 0 012.592 2.592l-9.068 9.068 9.07 9.07a1.833 1.833 0 01-2.59 2.592l-9.072-9.07-9.073 9.073a1.833 1.833 0 01-2.591-2.592L9.61 12.2z"
                     fill="#fff"
                   ></path>
                 </svg>
               </button>
             </div>
-            <div class="basket__items">{basketElement}</div>
-            <div class="basket__delivery">
+            <div className="basket__items">{basketElement}</div>
+            <div className="basket__delivery">
               <CostBasket mass={this.state.massBasketElem} />
             </div>
-            <form class="basket__form">
-              <div class="basket__form-adress field">
-                <label for="adress">Адрес:</label>
+            <form className="basket__form">
+              <div className="basket__form-adress field">
+                <label htmlFor="adress">Адрес:</label>
                 <input
                   type="text"
                   id="adress"
                   name="adress_name"
-                  value=""
+                  defaultValue=""
                   required
                 />
               </div>
-              <div class="basket__form-tel">
-                <label for="telefon">Телефон (через +7 без пробелов):</label>
+              <div className="basket__form-tel">
+                <label htmlFor="telefon">
+                  Телефон (через +7 без пробелов):
+                </label>
                 <input
-                  value="+7"
+                  defaultValue="+7"
                   type="text"
                   id="telefon"
                   name="telefon_name"
@@ -107,13 +113,13 @@ class App extends Component {
                   pattern="\+7[0-9]{10}"
                 />
               </div>
-              <div class="basket__form-time">
+              <div className="basket__form-time">
                 <label>Привести к:</label>
-                <button type="button" class="basket__delivery-time">
+                <button type="button" className="basket__delivery-time">
                   как можно скорее
                 </button>
               </div>
-              <div class="basket__form-button">
+              <div className="basket__form-button">
                 <button type="submit">Оформить заказ</button>
               </div>
             </form>
@@ -128,14 +134,13 @@ class App extends Component {
     for (let item of this.state.massBasketElem) {
       count += +item.count;
     }
-    console.log(JSON.stringify(this.state.massBasketElem));
     return count;
   };
 
   categoryClickHandler = (category) => {
-    console.log(category);
     this.setState({
       massMenuItem: massItem.filter((item) => item.category == category),
+      activeCategory: category,
     });
   };
 
@@ -164,7 +169,6 @@ class App extends Component {
     } else {
       mass[index] = item;
     }
-    console.log(mass);
     this.setState({
       massBasketElem: mass,
     });

@@ -6,14 +6,11 @@ class CostBasket extends Component {
     const cost = this.costBasket(mass);
     return (
       <div>
-        <p class="basket__delivery-title">Информация по доставке</p>
-        <div class="basket__delivery-info">
-          {/* <p class="basket__delivery-count">
-            <span> 6 </span> позиций
-          </p> */}
-          <div class="basket__delivery-sum">
-            <p class="basket__delivery-sum-title">Сумма заказа</p>
-            <p class="basket__delivery-sum-count">
+        <p className="basket__delivery-title">Информация по доставке</p>
+        <div className="basket__delivery-info">
+          <div className="basket__delivery-sum">
+            <p className="basket__delivery-sum-title">Сумма заказа</p>
+            <p className="basket__delivery-sum-count">
               <span>{cost}</span> Р
             </p>
           </div>

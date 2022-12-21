@@ -4,21 +4,21 @@ class BasketItem extends Component {
   render() {
     const { item, onMinusCkick, onPlusCkick, onCloseCkick } = this.props;
     return (
-      <div class="basket__item">
-        <div class="basket__item-img-wrapper">
-          <img src="images/fish/1.png" alt="order" class="basket__item-img" />
+      <div className="basket__item">
+        <div className="basket__item-img-wrapper">
+          <img src={item.img} alt="order" className="basket__item-img" />
         </div>
-        <div class="basket__item-wrapper">
-          <p class="basket__item-title">{item.title}</p>
-          <div class="basket__item-btn-wrapper">
-            <button class="basket__item-btn minus" onClick={onMinusCkick}>
-              <svg width="10" height="10" viewBox="0 0 10 10" class="icon">
+        <div className="basket__item-wrapper">
+          <p className="basket__item-title">{item.title}</p>
+          <div className="basket__item-btn-wrapper">
+            <button className="basket__item-btn minus" onClick={onMinusCkick}>
+              <svg width="10" height="10" viewBox="0 0 10 10" className="icon">
                 <rect fill="#fff" y="4" width="10" height="2" rx="1"></rect>
               </svg>
             </button>
-            <p class="basket__item-btn-count">{item.count}</p>
-            <button class="basket__item-btn plus" onClick={onPlusCkick}>
-              <svg width="10" height="10" viewBox="0 0 10 10" class="icon">
+            <p className="basket__item-btn-count">{item.count}</p>
+            <button className="basket__item-btn plus" onClick={onPlusCkick}>
+              <svg width="10" height="10" viewBox="0 0 10 10" className="icon">
                 <g fill="#fff">
                   <rect x="4" width="2" height="10" ry="1"></rect>
                   <rect y="4" width="10" height="2" rx="1"></rect>
@@ -26,11 +26,11 @@ class BasketItem extends Component {
               </svg>
             </button>
           </div>
-          <p class="basket__item-price">{item.count * item.price} p</p>
+          <p className="basket__item-price">{item.count * item.price} p</p>
         </div>
-        <button class="basket__item-del" onClick={onCloseCkick}>
+        <button className="basket__item-del" onClick={onCloseCkick}>
           <svg
-            class="basket__item-del-svg"
+            className="basket__item-del-svg"
             width="14"
             height="14"
             viewBox="0 0 25 25"
