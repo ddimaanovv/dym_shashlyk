@@ -79,4 +79,13 @@ export default function basketHandler() {
     parent.append(button_date);
     return button_date;
   }
+
+  let blockButtonDates = document.querySelector(".basket__form-time");
+  blockButtonDates.addEventListener("click", blockTimesHandler);
+  function blockTimesHandler(e) {
+    document.querySelectorAll(".basket__delivery-time").forEach((element) => {
+      element.classList.remove("active");
+    });
+    e.target.classList.add("active");
+  }
 }

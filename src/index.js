@@ -7,6 +7,9 @@ import massCategoryItem from "./massCategoryItem";
 import basketHandler from "./basketHandler";
 import BasketItem from "./components/BasketItem";
 import CostBasket from "./components/CostBasket";
+import sendToBot from "./components/bot";
+
+let basketForOrder = [];
 
 class App extends Component {
   state = {
@@ -17,6 +20,7 @@ class App extends Component {
     massBasketElem: [],
     activeCategory: massCategoryItem[0].category,
   };
+
   render() {
     const menuItemElement = this.state.massMenuItem.map((item) => (
       <MenuItem
@@ -115,12 +119,14 @@ class App extends Component {
               </div>
               <div className="basket__form-time">
                 <label>Привести к:</label>
-                <button type="button" className="basket__delivery-time">
+                <button type="button" className="basket__delivery-time active">
                   как можно скорее
                 </button>
               </div>
               <div className="basket__form-button">
-                <button type="submit">Оформить заказ</button>
+                <button type="submit" onClick={this.orderHandler()}>
+                  Оформить заказ
+                </button>
               </div>
             </form>
           </div>
@@ -128,6 +134,9 @@ class App extends Component {
       </div>
     );
   }
+  orderHandler = () => {
+    basketForOrder = this.state.massBasketElem;
+  };
 
   countBasket = () => {
     let count = 0;
@@ -186,8 +195,32 @@ class App extends Component {
 
   componentDidMount() {
     basketHandler();
+    let applicantForm = document.querySelector(".basket__form");
+    applicantForm.addEventListener("submit", handleFormSubmit);
   }
 }
 
 const root = ReactDOM.createRoot(document.getElementById("menu"));
 root.render(<App />);
+
+function handleFormSubmit(event) {
+  event.preventDefault();
+  let infoDeliveri = {
+    adress: document.getElementById("adress").value,
+    mobile: document.getElementById("telefon").value,
+    time: document.getElementsByClassName("basket__delivery-time active")[0]
+      .textContent,
+  };
+
+  // let orderToJSON = JSON.stringify({
+  //   Products: basketForOrder,
+  //   Data: infoDeliveri,
+  // });
+
+  let orderToJSON = {
+    Products: basketForOrder,
+    Data: infoDeliveri,
+  };
+
+  sendToBot(orderToJSON);
+}

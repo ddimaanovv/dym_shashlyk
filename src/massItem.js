@@ -4,7 +4,7 @@ let shawarma = [
   {
     id: ++id,
     category: "ШАУРМА НА УГЛЯХ",
-    img: "images/menu_item/shawarma/Курица.png",
+    img: "images/menu_item/shawarma/Курица.webp",
     title: "ШАУРМА С КУРИЦЕЙ",
     price: "170",
     weight: "350г",
@@ -13,7 +13,7 @@ let shawarma = [
   {
     id: ++id,
     category: "ШАУРМА НА УГЛЯХ",
-    img: "images/menu_item/shawarma/Свинина.png",
+    img: "images/menu_item/shawarma/Свинина.webp",
     title: "ШАУРМА СО СВИНИНОЙ",
     price: "220",
     weight: "350г",
@@ -22,7 +22,7 @@ let shawarma = [
   {
     id: ++id,
     category: "ШАУРМА НА УГЛЯХ",
-    img: "images/menu_item/shawarma/Говядина.png",
+    img: "images/menu_item/shawarma/Говядина.webp",
     title: "ШАУРМА С ГОВЯДИНОЙ",
     price: "280",
     weight: "350г",
@@ -31,7 +31,7 @@ let shawarma = [
   {
     id: ++id,
     category: "ШАУРМА НА УГЛЯХ",
-    img: "images/menu_item/shawarma/Баранина.png",
+    img: "images/menu_item/shawarma/Баранина.webp",
     title: "ШАУРМА С БАРАНИНОЙ",
     price: "300",
     weight: "350г",
@@ -43,7 +43,7 @@ let barbecue = [
   {
     id: ++id,
     category: "ШАШЛЫК",
-    img: "images/menu_item/barbecue/Свиная шейка.png",
+    img: "images/menu_item/barbecue/Свиная шейка.webp",
     title: "свиная шейка",
     price: "390",
     weight: "250г",
@@ -52,7 +52,7 @@ let barbecue = [
   {
     id: ++id,
     category: "ШАШЛЫК",
-    img: "images/menu_item/barbecue/Свиные ребра.png",
+    img: "images/menu_item/barbecue/Свиные ребра.webp",
     title: "Свиные ребра",
     price: "340",
     weight: "250г",
@@ -61,7 +61,7 @@ let barbecue = [
   {
     id: ++id,
     category: "ШАШЛЫК",
-    img: "images/menu_item/barbecue/Филе телятины.png",
+    img: "images/menu_item/barbecue/Филе телятины.webp",
     title: "Филе телятины",
     price: "499",
     weight: "250г",
@@ -70,7 +70,7 @@ let barbecue = [
   {
     id: ++id,
     category: "ШАШЛЫК",
-    img: "images/menu_item/barbecue/Корейка ягненка.png",
+    img: "images/menu_item/barbecue/Корейка ягненка.webp",
     title: "Корейка ягненка",
     price: "499",
     weight: "170г",
@@ -79,7 +79,7 @@ let barbecue = [
   {
     id: ++id,
     category: "ШАШЛЫК",
-    img: "images/menu_item/barbecue/Мякоть баранина.png",
+    img: "images/menu_item/barbecue/Мякоть баранина.webp",
     title: "Мякоть Баранина",
     price: "499",
     weight: "250г",
@@ -88,7 +88,7 @@ let barbecue = [
   {
     id: ++id,
     category: "ШАШЛЫК",
-    img: "images/menu_item/barbecue/Ребра баранины.png",
+    img: "images/menu_item/barbecue/Ребра баранины.webp",
     title: "Ребра баранина",
     price: "440",
     weight: "250г",
@@ -97,7 +97,7 @@ let barbecue = [
   {
     id: ++id,
     category: "ШАШЛЫК",
-    img: "images/menu_item/barbecue/Куриные крылья.png",
+    img: "images/menu_item/barbecue/Куриные крылья.webp",
     title: "Куриные крылья",
     price: "250",
     weight: "250г",
@@ -106,7 +106,7 @@ let barbecue = [
   {
     id: ++id,
     category: "ШАШЛЫК",
-    img: "images/menu_item/barbecue/Куриные бедра.png",
+    img: "images/menu_item/barbecue/Куриные бедра.webp",
     title: "Кириное бедро",
     price: "290",
     weight: "230г",
@@ -115,7 +115,7 @@ let barbecue = [
   {
     id: ++id,
     category: "ШАШЛЫК",
-    img: "images/menu_item/barbecue/Куриное филе.png",
+    img: "images/menu_item/barbecue/Куриное филе.webp",
     title: "Куриное филе",
     price: "320",
     weight: "250г",
@@ -124,7 +124,7 @@ let barbecue = [
   {
     id: ++id,
     category: "ШАШЛЫК",
-    img: "images/menu_item/barbecue/Крылья барбекю.png",
+    img: "images/menu_item/barbecue/Крылья барбекю.webp",
     title: "Крылья барбекю",
     price: "280",
     weight: "280г",
@@ -136,7 +136,7 @@ let drinks = [
   {
     id: ++id,
     category: "НАПИТКИ",
-    img: "images/menu_item/drinks/добрый яблоко.jpg",
+    img: "images/menu_item/drinks/добрый яблоко.webp",
     title: "добрый яблоко",
     price: "60",
     weight: "0,2",
@@ -145,7 +145,7 @@ let drinks = [
   {
     id: ++id,
     category: "НАПИТКИ",
-    img: "images/menu_item/drinks/Дюшес.jpg",
+    img: "images/menu_item/drinks/Дюшес.webp",
     title: "Дюшес",
     price: "100",
     weight: "0,5",
@@ -154,7 +154,7 @@ let drinks = [
   {
     id: ++id,
     category: "НАПИТКИ",
-    img: "images/menu_item/drinks/кола.jpg",
+    img: "images/menu_item/drinks/кола.webp",
     title: "кола",
     price: "90",
     weight: "0,33",
@@ -163,7 +163,7 @@ let drinks = [
   {
     id: ++id,
     category: "НАПИТКИ",
-    img: "images/menu_item/drinks/пепси0,3.jpg",
+    img: "images/menu_item/drinks/пепси0,3.webp",
     title: "пепси 0,33",
     price: "80",
     weight: "0,33",
@@ -172,7 +172,7 @@ let drinks = [
   {
     id: ++id,
     category: "НАПИТКИ",
-    img: "images/menu_item/drinks/пепси0,5.jpg",
+    img: "images/menu_item/drinks/пепси0,5.webp",
     title: "пепси 0,5",
     price: "90",
     weight: "0,5",
@@ -181,7 +181,7 @@ let drinks = [
   {
     id: ++id,
     category: "НАПИТКИ",
-    img: "images/menu_item/drinks/святой источник.jpg",
+    img: "images/menu_item/drinks/святой источник.webp",
     title: "Святой источник",
     price: "60",
     weight: "0,5",
@@ -190,7 +190,7 @@ let drinks = [
   {
     id: ++id,
     category: "НАПИТКИ",
-    img: "images/menu_item/drinks/сенежская с газом.jpg",
+    img: "images/menu_item/drinks/сенежская с газом.webp",
     title: "Сенежская с газом",
     price: "60",
     weight: "0,5",
@@ -199,7 +199,7 @@ let drinks = [
   {
     id: ++id,
     category: "НАПИТКИ",
-    img: "images/menu_item/drinks/тан.jpg",
+    img: "images/menu_item/drinks/тан.webp",
     title: "тан",
     price: "150",
     weight: "0,5",
@@ -211,7 +211,7 @@ let fish = [
   {
     id: ++id,
     category: "РЫБА НА МАНГАЛЕ",
-    img: "images/menu_item/fish/Дорадо.png",
+    img: "images/menu_item/fish/Дорадо.webp",
     title: "Дорадо",
     price: "699",
     weight: "250г",
@@ -220,7 +220,7 @@ let fish = [
   {
     id: ++id,
     category: "РЫБА НА МАНГАЛЕ",
-    img: "images/menu_item/fish/Сибас.png",
+    img: "images/menu_item/fish/Сибас.webp",
     title: "Сибас",
     price: "699",
     weight: "250г",
@@ -229,7 +229,7 @@ let fish = [
   {
     id: ++id,
     category: "РЫБА НА МАНГАЛЕ",
-    img: "images/menu_item/fish/Стейк семги.png",
+    img: "images/menu_item/fish/Стейк семги.webp",
     title: "Стейк семги",
     price: "799",
     weight: "250г",
@@ -238,7 +238,7 @@ let fish = [
   {
     id: ++id,
     category: "РЫБА НА МАНГАЛЕ",
-    img: "images/menu_item/fish/Форель.png",
+    img: "images/menu_item/fish/Форель.webp",
     title: "Форель",
     price: "699",
     weight: "250г",
@@ -250,7 +250,7 @@ let garnish = [
   {
     id: ++id,
     category: "ГАРНИР",
-    img: "images/menu_item/garnish/Грибы.png",
+    img: "images/menu_item/garnish/Грибы.webp",
     title: "Грибы",
     price: "190",
     weight: "80г",
@@ -259,7 +259,7 @@ let garnish = [
   {
     id: ++id,
     category: "ГАРНИР",
-    img: "images/menu_item/garnish/Картошка на углях.png",
+    img: "images/menu_item/garnish/Картошка на углях.webp",
     title: "Картошка на углях",
     price: "100",
     weight: "100г",
@@ -268,7 +268,7 @@ let garnish = [
   {
     id: ++id,
     category: "ГАРНИР",
-    img: "images/menu_item/garnish/Картошка с курдюком.png",
+    img: "images/menu_item/garnish/Картошка с курдюком.webp",
     title: "Картошка с курдюком",
     price: "140",
     weight: "100г",
@@ -277,7 +277,7 @@ let garnish = [
   {
     id: ++id,
     category: "ГАРНИР",
-    img: "images/menu_item/garnish/Картошка с салом.png",
+    img: "images/menu_item/garnish/Картошка с салом.webp",
     title: "Картошка с салом",
     price: "120",
     weight: "100г",
@@ -286,7 +286,7 @@ let garnish = [
   {
     id: ++id,
     category: "ГАРНИР",
-    img: "images/menu_item/garnish/Овощи на мангале.png",
+    img: "images/menu_item/garnish/Овощи на мангале.webp",
     title: "Овощи на мангале",
     price: "290",
     weight: "300г",
@@ -295,7 +295,7 @@ let garnish = [
   {
     id: ++id,
     category: "ГАРНИР",
-    img: "images/menu_item/garnish/Свежие овощи.png",
+    img: "images/menu_item/garnish/Свежие овощи.webp",
     title: "Свежие овощи",
     price: "250",
     weight: "230г",
@@ -304,7 +304,7 @@ let garnish = [
   {
     id: ++id,
     category: "ГАРНИР",
-    img: "images/menu_item/garnish/Хоровац.png",
+    img: "images/menu_item/garnish/Хоровац.webp",
     title: "Хоровац",
     price: "300",
     weight: "300г",
@@ -316,7 +316,7 @@ let lula_kebab = [
   {
     id: ++id,
     category: "ЛЮЛЯ - КЕБАБ",
-    img: "images/menu_item/lula_kebab/Баранина.png",
+    img: "images/menu_item/lula_kebab/Баранина.webp",
     title: "Баранина",
     price: "290",
     weight: "170г",
@@ -325,7 +325,7 @@ let lula_kebab = [
   {
     id: ++id,
     category: "ЛЮЛЯ - КЕБАБ",
-    img: "images/menu_item/lula_kebab/Говядина.png",
+    img: "images/menu_item/lula_kebab/Говядина.webp",
     title: "Говядина",
     price: "270",
     weight: "170г",
@@ -334,7 +334,7 @@ let lula_kebab = [
   {
     id: ++id,
     category: "ЛЮЛЯ - КЕБАБ",
-    img: "images/menu_item/lula_kebab/Из курицы.png",
+    img: "images/menu_item/lula_kebab/Из курицы.webp",
     title: "Из курицы",
     price: "240",
     weight: "170г",
@@ -343,7 +343,7 @@ let lula_kebab = [
   {
     id: ++id,
     category: "ЛЮЛЯ - КЕБАБ",
-    img: "images/menu_item/lula_kebab/Свинина.png",
+    img: "images/menu_item/lula_kebab/Свинина.webp",
     title: "Свинина",
     price: "260",
     weight: "170г",
@@ -355,7 +355,7 @@ let sauce = [
   {
     id: ++id,
     category: "СОУСЫ",
-    img: "images/menu_item/sauce/томатный.png",
+    img: "images/menu_item/sauce/томатный.webp",
     title: "томатный",
     price: "50",
     weight: "50мл",
@@ -364,7 +364,7 @@ let sauce = [
   {
     id: ++id,
     category: "СОУСЫ",
-    img: "images/menu_item/sauce/чесночный.png",
+    img: "images/menu_item/sauce/чесночный.webp",
     title: "чесночный",
     price: "50",
     weight: "50мл",
@@ -376,7 +376,7 @@ let bakery = [
   {
     id: ++id,
     category: "ВЫПЕЧКА",
-    img: "images/menu_item/bakery/лаваш.png",
+    img: "images/menu_item/bakery/лаваш.webp",
     title: "лаваш",
     price: "40",
     weight: "75г",

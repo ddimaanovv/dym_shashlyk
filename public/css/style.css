@@ -5,6 +5,14 @@
   scroll-behavior: smooth;
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 body {
   background-image: url(../images/container-bg.jpg);
   background-repeat: repeat-y;
@@ -97,6 +105,7 @@ a {
   justify-content: space-around;
   background-color: #000;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .basket__count-items {
@@ -213,6 +222,7 @@ a {
 .menu__menu {
   flex-basis: 284px;
   background-color: #d9d9d933;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .menu__categories {
@@ -310,6 +320,7 @@ a {
   cursor: pointer;
   transition: all 0.2s;
   letter-spacing: normal;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .menu__item-btn:hover {
@@ -323,7 +334,7 @@ a {
 .menu__item-btn-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   position: relative;
   width: 96px;
   height: 46px;
@@ -331,20 +342,25 @@ a {
   background-color: #000;
   border-radius: 10px;
   cursor: default;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .menu__item-btn-add {
-  height: 100%;
+  padding: 8px 8px;
   background: none;
   cursor: pointer;
   position: relative;
-  width: 35.41%;
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   font-size: 28px;
+}
+
+.menu__item-btn-count {
+  width: 20px;
+  text-align: center;
 }
 
 .top-food {
@@ -809,7 +825,7 @@ a {
 .basket__item-btn-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   position: relative;
   width: 96px;
   height: 32px;
@@ -823,7 +839,6 @@ a {
   cursor: pointer;
   position: relative;
   padding: 8px 8px;
-  width: 35.41%;
   border: none;
   display: flex;
   justify-content: center;
@@ -916,7 +931,7 @@ a {
   transition: all 0.5s;
 }
 
-.basket__delivery-time:focus {
+.basket__delivery-time.active {
   border-color: rgb(0, 192, 0);
 }
 
@@ -958,6 +973,18 @@ a {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .menu__list-link:hover {
+    border-bottom: none;
+  }
+  .header__phone:hover {
+    background-color: #d60202;
+  }
+  .menu__item-btn:hover {
+    background-color: #000;
   }
 }
 
@@ -1085,7 +1112,7 @@ a {
     height: 320px;
   }
   .reviews__text {
-    font-size: 15px;
+    font-size: 12px;
     line-height: 20px;
   }
 }
@@ -1672,5 +1699,17 @@ a {
   }
   .useful .title-text {
     padding-top: 18px;
+  }
+}
+
+.menu__item img {
+  animation: fade 0.5s linear;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
