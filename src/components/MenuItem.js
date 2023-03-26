@@ -7,6 +7,7 @@ class MenuItem extends Component {
       <div className="menu__item">
         <img src={item.img} alt="fish" className="menu__item-img" />
         <h3 className="menu__item-title">{item.title}</h3>
+        <p className="menu__item-tochka">{item.tochka}</p>
         <div className="menu__item-price">
           <p className="menu__item-price-weight">{item.weight}</p>
           <p className="menu__item-price-cost">{item.price}р</p>

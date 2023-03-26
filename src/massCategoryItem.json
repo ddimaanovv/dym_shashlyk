@@ -2,41 +2,56 @@
   {
     "id": 0,
     "category": "ШАУРМА НА УГЛЯХ",
-    "img": "images/menu/1.png",
+    "img": "images/menu/1.png"
   },
   {
     "id": 1,
     "category": "ШАШЛЫК",
-    "img": "images/menu/2.png",
+    "img": "images/menu/2.png"
   },
   {
     "id": 2,
     "category": "ЛЮЛЯ - КЕБАБ",
-    "img": "images/menu/3.png",
+    "img": "images/menu/3.png"
   },
   {
     "id": 3,
     "category": "РЫБА НА МАНГАЛЕ",
-    "img": "images/menu/4.png",
+    "img": "images/menu/4.png"
   },
   {
     "id": 4,
-    "category": "ГАРНИР",
-    "img": "images/menu/5.png",
+    "category": "ГОРЯЧИЕ БЛЮДА",
+    "img": "images/menu/10.png"
   },
   {
     "id": 5,
-    "category": "ВЫПЕЧКА",
-    "img": "images/menu/6.png",
+    "category": "ГАРНИР",
+    "img": "images/menu/5.png"
   },
   {
     "id": 6,
-    "category": "НАПИТКИ",
-    "img": "images/menu/7.png",
+    "category": "САЛАТЫ",
+    "img": "images/menu/9.png"
   },
   {
     "id": 7,
-    "category": "СОУСЫ",
-    "img": "images/menu/8.png",
+    "category": "ХОЛОДНЫЕ ЗАКУСКИ",
+    "img": "images/menu/11.png"
   },
+  {
+    "id": 8,
+    "category": "ВЫПЕЧКА",
+    "img": "images/menu/6.png"
+  },
+  {
+    "id": 9,
+    "category": "НАПИТКИ",
+    "img": "images/menu/7.png"
+  },
+  {
+    "id": 10,
+    "category": "СОУСЫ",
+    "img": "images/menu/8.png"
+  }
 ]

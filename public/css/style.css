@@ -285,7 +285,8 @@ a {
 }
 
 .menu__item-title,
-.menu__item-price {
+.menu__item-price,
+.menu__item-tochka {
   text-transform: uppercase;
   height: 2em;
   margin: 0 10px 20px;
@@ -293,6 +294,11 @@ a {
   font-size: 14px;
   line-height: 17px;
 }
+
+.menu__item-tochka {
+  font-size: 10px;
+}
+
 .menu__item-price {
   display: flex;
   justify-content: space-between;
@@ -1588,7 +1594,8 @@ a {
     line-height: 50px;
   }
   .menu__item-title,
-  .menu__item-price {
+  .menu__item-price,
+  .menu__item-tochka {
     letter-spacing: 0.5px;
   }
   .top-food .courusel__item {
@@ -1699,10 +1706,15 @@ a {
     height: 150px;
   }
   .menu__item-title,
-  .menu__item-price {
+  .menu__item-price,
+  .menu__item-tochka {
     margin-bottom: 10px;
     font-size: 12px;
     line-height: 12px;
+  }
+
+  .menu__item-tochka {
+    font-size: 10px;
   }
 
   .menu__item-btn-wrapper {
