@@ -1,0 +1,362 @@
+[
+    {
+        "id": 0,
+        "category": "ШАУРМА НА УГЛЯХ",
+        "img": "images/menu_item/shawarma/Курица.webp",
+        "title": "ШАУРМА С КУРИЦЕЙ",
+        "price": "170",
+        "weight": "шт",
+        "count": 0
+    },
+    {
+        "id": 1,
+        "category": "ШАУРМА НА УГЛЯХ",
+        "img": "images/menu_item/shawarma/Свинина.webp",
+        "title": "ШАУРМА СО СВИНИНОЙ",
+        "price": "220",
+        "weight": "шт",
+        "count": 0
+    },
+    {
+        "id": 2,
+        "category": "ШАУРМА НА УГЛЯХ",
+        "img": "images/menu_item/shawarma/Говядина.webp",
+        "title": "ШАУРМА С ГОВЯДИНОЙ",
+        "price": "280",
+        "weight": "шт",
+        "count": 0
+    },
+    {
+        "id": 3,
+        "category": "ШАУРМА НА УГЛЯХ",
+        "img": "images/menu_item/shawarma/Баранина.webp",
+        "title": "ШАУРМА С БАРАНИНОЙ",
+        "price": "300",
+        "weight": "шт",
+        "count": 0
+    },
+    {
+        "id": 4,
+        "category": "ШАШЛЫК",
+        "img": "images/menu_item/barbecue/Свиная шейка.webp",
+        "title": "свиная шейка",
+        "price": "390",
+        "weight": "шампур",
+        "count": 0
+    },
+    {
+        "id": 5,
+        "category": "ШАШЛЫК",
+        "img": "images/menu_item/barbecue/Свиные ребра.webp",
+        "title": "Свиные ребра",
+        "price": "340",
+        "weight": "шампур",
+        "count": 0
+    },
+    {
+        "id": 6,
+        "category": "ШАШЛЫК",
+        "img": "images/menu_item/barbecue/Филе телятины.webp",
+        "title": "Филе телятины",
+        "price": "499",
+        "weight": "шампур",
+        "count": 0
+    },
+    {
+        "id": 7,
+        "category": "ШАШЛЫК",
+        "img": "images/menu_item/barbecue/Корейка ягненка.webp",
+        "title": "Корейка ягненка",
+        "price": "499",
+        "weight": "шампур",
+        "count": 0
+    },
+    {
+        "id": 8,
+        "category": "ШАШЛЫК",
+        "img": "images/menu_item/barbecue/Мякоть баранина.webp",
+        "title": "Мякоть Баранина",
+        "price": "499",
+        "weight": "шампур",
+        "count": 0
+    },
+    {
+        "id": 9,
+        "category": "ШАШЛЫК",
+        "img": "images/menu_item/barbecue/Ребра баранины.webp",
+        "title": "Ребра баранина",
+        "price": "440",
+        "weight": "шампур",
+        "count": 0
+    },
+    {
+        "id": 10,
+        "category": "ШАШЛЫК",
+        "img": "images/menu_item/barbecue/Куриные крылья.webp",
+        "title": "Куриные крылья",
+        "price": "250",
+        "weight": "шампур",
+        "count": 0
+    },
+    {
+        "id": 11,
+        "category": "ШАШЛЫК",
+        "img": "images/menu_item/barbecue/Куриные бедра.webp",
+        "title": "Куриное бедро",
+        "price": "290",
+        "weight": "шампур",
+        "count": 0
+    },
+    {
+        "id": 12,
+        "category": "ШАШЛЫК",
+        "img": "images/menu_item/barbecue/Куриное филе.webp",
+        "title": "Куриное филе",
+        "price": "320",
+        "weight": "шампур",
+        "count": 0
+    },
+    {
+        "id": 13,
+        "category": "ШАШЛЫК",
+        "img": "images/menu_item/barbecue/Крылья барбекю.webp",
+        "title": "Крылья барбекю",
+        "price": "280",
+        "weight": "шампур",
+        "count": 0
+    },
+    {
+        "id": 14,
+        "category": "НАПИТКИ",
+        "img": "images/menu_item/drinks/добрый яблоко.webp",
+        "title": "добрый яблоко",
+        "price": "60",
+        "weight": "0,2",
+        "count": 0
+    },
+    {
+        "id": 15,
+        "category": "НАПИТКИ",
+        "img": "images/menu_item/drinks/Дюшес.webp",
+        "title": "Дюшес",
+        "price": "100",
+        "weight": "0,5",
+        "count": 0
+    },
+    {
+        "id": 16,
+        "category": "НАПИТКИ",
+        "img": "images/menu_item/drinks/кола.webp",
+        "title": "кола",
+        "price": "90",
+        "weight": "0,33",
+        "count": 0
+    },
+    {
+        "id": 17,
+        "category": "НАПИТКИ",
+        "img": "images/menu_item/drinks/пепси0,3.webp",
+        "title": "пепси 0,33",
+        "price": "80",
+        "weight": "0,33",
+        "count": 0
+    },
+    {
+        "id": 18,
+        "category": "НАПИТКИ",
+        "img": "images/menu_item/drinks/пепси0,5.webp",
+        "title": "пепси 0,5",
+        "price": "90",
+        "weight": "0,5",
+        "count": 0
+    },
+    {
+        "id": 19,
+        "category": "НАПИТКИ",
+        "img": "images/menu_item/drinks/святой источник.webp",
+        "title": "Святой источник",
+        "price": "60",
+        "weight": "0,5",
+        "count": 0
+    },
+    {
+        "id": 20,
+        "category": "НАПИТКИ",
+        "img": "images/menu_item/drinks/сенежская с газом.webp",
+        "title": "Сенежская с газом",
+        "price": "60",
+        "weight": "0,5",
+        "count": 0
+    },
+    {
+        "id": 21,
+        "category": "НАПИТКИ",
+        "img": "images/menu_item/drinks/тан.webp",
+        "title": "тан",
+        "price": "150",
+        "weight": "0,5",
+        "count": 0
+    },
+    {
+        "id": 22,
+        "category": "РЫБА НА МАНГАЛЕ",
+        "img": "images/menu_item/fish/Дорадо.webp",
+        "title": "Дорадо",
+        "price": "699",
+        "weight": "шт",
+        "count": 0
+    },
+    {
+        "id": 23,
+        "category": "РЫБА НА МАНГАЛЕ",
+        "img": "images/menu_item/fish/Сибас.webp",
+        "title": "Сибас",
+        "price": "699",
+        "weight": "шт",
+        "count": 0
+    },
+    {
+        "id": 24,
+        "category": "РЫБА НА МАНГАЛЕ",
+        "img": "images/menu_item/fish/Стейк семги.webp",
+        "title": "Стейк семги",
+        "price": "799",
+        "weight": "шт",
+        "count": 0
+    },
+    {
+        "id": 25,
+        "category": "РЫБА НА МАНГАЛЕ",
+        "img": "images/menu_item/fish/Форель.webp",
+        "title": "Форель",
+        "price": "699",
+        "weight": "шт",
+        "count": 0
+    },
+    {
+        "id": 26,
+        "category": "ГАРНИР",
+        "img": "images/menu_item/garnish/Грибы.webp",
+        "title": "Грибы",
+        "price": "190",
+        "weight": "80г",
+        "count": 0
+    },
+    {
+        "id": 27,
+        "category": "ГАРНИР",
+        "img": "images/menu_item/garnish/Картошка на углях.webp",
+        "title": "Картошка на углях",
+        "price": "100",
+        "weight": "100г",
+        "count": 0
+    },
+    {
+        "id": 28,
+        "category": "ГАРНИР",
+        "img": "images/menu_item/garnish/Картошка с курдюком.webp",
+        "title": "Картошка с курдюком",
+        "price": "140",
+        "weight": "100г",
+        "count": 0
+    },
+    {
+        "id": 29,
+        "category": "ГАРНИР",
+        "img": "images/menu_item/garnish/Картошка с салом.webp",
+        "title": "Картошка с салом",
+        "price": "120",
+        "weight": "100г",
+        "count": 0
+    },
+    {
+        "id": 30,
+        "category": "ГАРНИР",
+        "img": "images/menu_item/garnish/Овощи на мангале.webp",
+        "title": "Овощи на мангале",
+        "price": "290",
+        "weight": "300г",
+        "count": 0
+    },
+    {
+        "id": 31,
+        "category": "ГАРНИР",
+        "img": "images/menu_item/garnish/Свежие овощи.webp",
+        "title": "Свежие овощи",
+        "price": "250",
+        "weight": "230г",
+        "count": 0
+    },
+    {
+        "id": 32,
+        "category": "ГАРНИР",
+        "img": "images/menu_item/garnish/Хоровац.webp",
+        "title": "Хоровац",
+        "price": "300",
+        "weight": "300г",
+        "count": 0
+    },
+    {
+        "id": 33,
+        "category": "ЛЮЛЯ - КЕБАБ",
+        "img": "images/menu_item/lula_kebab/Баранина.webp",
+        "title": "Баранина",
+        "price": "290",
+        "weight": "шампур",
+        "count": 0
+    },
+    {
+        "id": 34,
+        "category": "ЛЮЛЯ - КЕБАБ",
+        "img": "images/menu_item/lula_kebab/Говядина.webp",
+        "title": "Говядина",
+        "price": "270",
+        "weight": "шампур",
+        "count": 0
+    },
+    {
+        "id": 35,
+        "category": "ЛЮЛЯ - КЕБАБ",
+        "img": "images/menu_item/lula_kebab/Из курицы.webp",
+        "title": "Из курицы",
+        "price": "240",
+        "weight": "шампур",
+        "count": 0
+    },
+    {
+        "id": 36,
+        "category": "ЛЮЛЯ - КЕБАБ",
+        "img": "images/menu_item/lula_kebab/Свинина.webp",
+        "title": "Свинина",
+        "price": "260",
+        "weight": "шампур",
+        "count": 0
+    },
+    {
+        "id": 37,
+        "category": "СОУСЫ",
+        "img": "images/menu_item/sauce/томатный.webp",
+        "title": "томатный",
+        "price": "50",
+        "weight": "50мл",
+        "count": 0
+    },
+    {
+        "id": 38,
+        "category": "СОУСЫ",
+        "img": "images/menu_item/sauce/чесночный.webp",
+        "title": "чесночный",
+        "price": "50",
+        "weight": "50мл",
+        "count": 0
+    },
+    {
+        "id": 39,
+        "category": "ВЫПЕЧКА",
+        "img": "images/menu_item/bakery/лаваш.webp",
+        "title": "лаваш",
+        "price": "40",
+        "weight": "75г",
+        "count": 0
+    }
+]

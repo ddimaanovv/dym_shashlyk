@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Сочный шашлык, шаурма, рыба и другие блюда на мангале в Химках по приятным ценам. Доставка всего за час или самовывоз!"
+    />
+    <title>Дым Шашлык</title>
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <meta property="og:title" content="Дым Шашлык" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dimshashlik.ru/" />
+    <meta property="og:image" content="https://dimshashlik.ru/images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="header__img"
+        src="images/meat-header.webp"
+        alt="meat images"
+      />
+      <div class="container">
+        <div class="header__top">
+          <button class="header__btn-menu">
+            <span></span>
+          </button>
+          <a
+            class="header__social-link"
+            href="https://vk.com/public211432689"
+            target="_blank"
+          >
+            <img
+              class="header__social-img"
+              src="images/icons/vk.svg"
+              alt="vk icon"
+            />
+          </a>
+          <a
+            class="header__social-link deeplink"
+            href="https://instagram.com/dim_shashlik_ximki"
+            target="_blank"
+          >
+            <img
+              class="header__social-img"
+              src="images/icons/instagram.svg"
+              alt="instagram icon"
+            />
+          </a>
+          <div class="header__mobile">
+            <a class="header__mobile-img" href="tel:+79659898988">
+              <img
+                class="header__social-img"
+                src="images/icons/smartphone.svg"
+                alt="smartphone icon"
+              />
+            </a>
+            <a class="phone" href="tel:+79659898988">+7 (965) 989-89-88</a>
+            <p class="header__mobile-text">Круглосуточно</p>
+          </div>
+        </div>
+        <div class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#menu">МЕНЮ</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#useful">ПОЛЕЗНО</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#galery">ГАЛЕРЕЯ</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#delivery">ДОСТАВКА</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#reviews">ОТЗЫВЫ</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#where">ГДЕ&nbspМЫ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__content">
+          <h1 class="header__title">ДЫМ ШАШЛЫК</h1>
+          <p class="header__subtitle">Любовь с первого шампура</p>
+          <a class="header__phone" href="tel:+79659898988">Позвонить</a>
+        </div>
+      </div>
+    </header>
+    <section class="menu" id="menu"></section>
+    <!-- <section class="top-food">
+      <div class="top-food__line"></div>
+      <p class="top-food__title">ТОП БЛЮД</p>
+      <div class="container">
+        <div class="courusel__inner">
+          <div class="courusel__item">
+            <div class="menu__item">
+              <img src="images/fish/1.png" alt="fish" class="menu__item-img" />
+              <h3 class="menu__item-title">ФОРЕЛЬ1</h3>
+              <p class="menu__item-price">650</p>
+              <button class="menu__item-btn">В КОРЗИНУ</button>
+            </div>
+          </div>
+          <div class="courusel__item">
+            <div class="menu__item">
+              <img src="images/fish/1.png" alt="fish" class="menu__item-img" />
+              <h3 class="menu__item-title">ФОРЕЛЬ2</h3>
+              <p class="menu__item-price">650</p>
+              <button class="menu__item-btn">В КОРЗИНУ</button>
+            </div>
+          </div>
+          <div class="courusel__item">
+            <div class="menu__item">
+              <img src="images/fish/1.png" alt="fish" class="menu__item-img" />
+              <h3 class="menu__item-title">ФОРЕЛЬ3</h3>
+              <p class="menu__item-price">650</p>
+              <button class="menu__item-btn">В КОРЗИНУ</button>
+            </div>
+          </div>
+          <div class="courusel__item">
+            <div class="menu__item">
+              <img src="images/fish/1.png" alt="fish" class="menu__item-img" />
+              <h3 class="menu__item-title">ФОРЕЛЬ4</h3>
+              <p class="menu__item-price">650</p>
+              <button class="menu__item-btn">В КОРЗИНУ</button>
+            </div>
+          </div>
+          <div class="courusel__item">
+            <div class="menu__item">
+              <img src="images/fish/1.png" alt="fish" class="menu__item-img" />
+              <h3 class="menu__item-title">ФОРЕЛЬ5</h3>
+              <p class="menu__item-price">650</p>
+              <button class="menu__item-btn">В КОРЗИНУ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="delivery" id="delivery">
+      <div class="container">
+        <div class="delivery__tittle">
+          <p class="title-text">Доставка</p>
+        </div>
+        <div class="delivery__inner">
+          <div class="delivery__item">
+            <img
+              src="./images/icons/icon-money.svg"
+              alt="icon"
+              class="delivery__icon"
+            />
+            <p class="delivery__text">
+              Предоплата 100% за заказ, подробности вам сообщит оператор
+            </p>
+          </div>
+          <div class="delivery__item">
+            <img
+              src="./images/icons/icon-delivery.svg"
+              alt="icon"
+              class="delivery__icon"
+            />
+            <p class="delivery__text">
+              Доставка оплачивается отдельно. Точную сумму доставки вам сообщит
+              оператор при оформлении заказа
+            </p>
+          </div>
+          <div class="delivery__item">
+            <img
+              src="./images/icons/icon-terminal.svg"
+              alt="icon"
+              class="delivery__icon"
+            />
+            <p class="delivery__text">Доставляем вовремя в указанные сроки</p>
+          </div>
+          <div class="delivery__item">
+            <img
+              src="./images/icons/icon-store.svg"
+              alt="icon"
+              class="delivery__icon"
+            />
+            <p class="delivery__text">
+              Доступен самомывоз заказа по адресу: г.Химки, Юбилейный просп.,
+              51, корп.1
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="useful" id="useful">
+      <img src="images/shashlik.webp" alt="shashlik" class="useful-img" />
+      <div class="container">
+        <div class="useful__tittle">
+          <p class="title-text">Полезно</p>
+        </div>
+
+        <div class="useful__item-container">
+          <div class="useful__item">
+            <img
+              src="./images/icons/icon-heart.svg"
+              alt="icon"
+              class="useful__icon"
+            />
+            <p class="useful__text">
+              Правильно приготовленный шашлык СНИЖАЕТ риск возникновения
+              сердечно-сосудистых заболеваний и артрита
+            </p>
+          </div>
+          <div class="useful__item">
+            <img
+              src="./images/icons/icon-vitamins.svg"
+              alt="icon"
+              class="useful__icon"
+            />
+            <p class="useful__text">
+              Мясо, правильно приготовленное на углях, сохраняет большие
+              ВИТАМИНОВ и МИКРОЭЛЕМЕНТОВ, полезных для человека, чем обычное
+              жареное мясо
+            </p>
+          </div>
+          <div class="useful__item">
+            <img
+              src="./images/icons/icon-diet.svg"
+              alt="icon"
+              class="useful__icon"
+            />
+            <p class="useful__text">
+              В мясе, приготовленном на углях, МЕНЬШЕ калорий, чем в жареном.
+              Кстати, настоящий шашлык – это совершенно ДИЕТИЧЕСКОЕ блюдо, так
+              как оно запекается, а не жарится
+            </p>
+          </div>
+          <div class="useful__item">
+            <img
+              src="./images/icons/icon-hand.svg"
+              alt="icon"
+              class="useful__icon"
+            />
+            <p class="useful__text">
+              Мы готовим мясо ПРАВИЛЬНО и самое главное с ЛЮБОВЬЮ
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="galery" id="galery">
+      <div class="container">
+        <div class="galery__title">
+          <p class="title-text">Галерея</p>
+        </div>
+      </div>
+      <div class="courusel__galery">
+        <div class="galery__courusel-item">
+          <img
+            src="images/galery/galery-vitrina.webp"
+            alt="shop"
+            class="galery__img"
+          />
+        </div>
+        <div class="galery__courusel-item">
+          <img
+            src="images/galery/galery-fish.webp"
+            alt="vitrina"
+            class="galery__img"
+          />
+        </div>
+        <div class="galery__courusel-item">
+          <img
+            src="images/galery/galery-shop.webp"
+            alt="fish"
+            class="galery__img"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="reviews__title">
+          <p class="title-text">Отзывы</p>
+        </div>
+      </div>
+      <div class="courusel__reviews">
+        <div class="reviews__courusel-wrapper">
+          <div class="reviews__courusel-item">
+            <div class="reviews__speech-bubble">
+              <p class="reviews__text">
+                Спасибо большое! Очень вкусный шашлык! Я первый раз сегодня
+                купила , а попробовали !!!!! Просто супер! Жаль что в Тушино
+                такого кафе нет!
+              </p>
+              <img
+                src="images/reviews/stars.svg"
+                alt="stars"
+                class="reviews__stars"
+              />
+            </div>
+            <div class="reviews__author">
+              <div class="reviews__author-div-img">
+                <img
+                  src="images/reviews/reviewier_1.jpg"
+                  alt="reviewier"
+                  class="reviews__author-img"
+                />
+              </div>
+              <div class="reviews__author-info">
+                <p class="reviews__author-name">Юлия Г.</p>
+                <p class="reviews__date">17.09.2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__courusel-wrapper">
+          <div class="reviews__courusel-item">
+            <div class="reviews__speech-bubble">
+              <p class="reviews__text">
+                Первый раз покупала шашлык. Прочитав отзывы и в таком восторге
+                всей семьей!!! Очень очень вкусно. Обязательно будем ещё
+                покупать. Благодарим 🙏
+              </p>
+              <img
+                src="images/reviews/stars.svg"
+                alt="stars"
+                class="reviews__stars"
+              />
+            </div>
+            <div class="reviews__author">
+              <div class="reviews__author-div-img">
+                <img
+                  src="images/reviews/reviewier_2.jpg"
+                  alt="reviewier"
+                  class="reviews__author-img"
+                />
+              </div>
+              <div class="reviews__author-info">
+                <p class="reviews__author-name">Юлия Прошина</p>
+                <p class="reviews__date">01.05.2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__courusel-wrapper">
+          <div class="reviews__courusel-item">
+            <div class="reviews__speech-bubble">
+              <p class="reviews__text">Балдеж!</p>
+              <img
+                src="images/reviews/stars.svg"
+                alt="stars"
+                class="reviews__stars"
+              />
+            </div>
+            <div class="reviews__author">
+              <div class="reviews__author-div-img">
+                <img
+                  src="images/reviews/reviewier_3.jpg"
+                  alt="reviewier"
+                  class="reviews__author-img"
+                />
+              </div>
+              <div class="reviews__author-info">
+                <p class="reviews__author-name">Яффа</p>
+                <p class="reviews__date">24.09.2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__courusel-wrapper">
+          <div class="reviews__courusel-item">
+            <div class="reviews__speech-bubble">
+              <p class="reviews__text">
+                Шаурма огонь, цены адекватные, персонал вежливый. в самом
+                заведении можно сесть покушать, просторно, удобное расположение.
+                рекомендуем всем посетить наше любимое местечко 🤍
+              </p>
+              <img
+                src="images/reviews/stars.svg"
+                alt="stars"
+                class="reviews__stars"
+              />
+            </div>
+            <div class="reviews__author">
+              <div class="reviews__author-div-img">
+                <img
+                  src="images/reviews/reviewier_4.jpg"
+                  alt="reviewier"
+                  class="reviews__author-img"
+                />
+              </div>
+              <div class="reviews__author-info">
+                <p class="reviews__author-name">Лейла Л.</p>
+                <p class="reviews__date">24.09.2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__courusel-wrapper">
+          <div class="reviews__courusel-item">
+            <div class="reviews__speech-bubble">
+              <p class="reviews__text">
+                Очень большая и вкусная шаурма. За гуманный ценник.
+              </p>
+              <img
+                src="images/reviews/stars.svg"
+                alt="stars"
+                class="reviews__stars"
+              />
+            </div>
+            <div class="reviews__author">
+              <div class="reviews__author-div-img">
+                <img
+                  src="images/reviews/reviewier_5.jpg"
+                  alt="reviewier"
+                  class="reviews__author-img"
+                />
+              </div>
+              <div class="reviews__author-info">
+                <p class="reviews__author-name">Alexa Berd</p>
+                <p class="reviews__date">24.09.2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="where" id="where">
+      <div class="container">
+        <div class="where__title">
+          <p class="title-text">Где мы</p>
+        </div>
+        <div class="where__map" style="position: relative; overflow: hidden">
+          <a
+            href="https://yandex.ru/maps/org/dym_shashlyk/188245452307/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+            >Дым-Шашлык</a
+          ><a
+            href="https://yandex.ru/maps/10758/himki/category/cafe/184106390/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+            >Кафе в Химках</a
+          ><a
+            href="https://yandex.ru/maps/10758/himki/category/fast_food/184106386/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 28px"
+            >Быстрое питание в Химках</a
+          ><iframe
+            src="https://yandex.ru/map-widget/v1/-/CCUZqWvE8D"
+            width="560"
+            height="400"
+            frameborder="1"
+            allowfullscreen="true"
+            style="position: relative"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="orderinfo">
+      <div class="orderinfo__bg"></div>
+      <div class="orderinfo__block">
+        <svg width="15" height="15" viewBox="0 0 25 25" fill="none">
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M9.61 12.199L.54 3.129A1.833 1.833 0 113.13.536l9.07 9.07L21.27.54a1.833 1.833 0 012.592 2.592l-9.068 9.068 9.07 9.07a1.833 1.833 0 01-2.59 2.592l-9.072-9.07-9.073 9.073a1.833 1.833 0 01-2.591-2.592L9.61 12.2z"
+            fill="#fff"
+          ></path>
+        </svg>
+        <div class="orderinfo__blockid">
+          <p class="orderinfo__text">Благодарим за заказ!</p>
+          <p class="orderinfo__textsmall">
+            Мы свяжемся с вами в ближайшее время
+          </p>
+          <p class="orderinfo__textsmall">
+            Номер вашего заказа: <span>000</span>
+          </p>
+          <img
+            src="images/icon-success.png"
+            alt="Вы сделали заказ"
+            class="orderinfo__doneimg"
+          />
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="header__top">
+          <a class="footer__logo" href="#">
+            <img
+              class="footer__logo-img"
+              src="images/logo-footer.png"
+              alt="logo"
+            />
+          </a>
+          <a
+            class="header__social-link"
+            href="https://vk.com/public211432689"
+            target="_blank"
+          >
+            <img
+              class="header__social-img"
+              src="images/icons/vk.svg"
+              alt="vk icon"
+            />
+          </a>
+          <a
+            class="header__social-link"
+            href="https://instagram.com/dim_shashlik_ximki"
+            target="_blank"
+          >
+            <img
+              class="header__social-img"
+              src="images/icons/instagram.svg"
+              alt="instagram icon"
+            />
+          </a>
+          <div class="header__mobile">
+            <a class="header__mobile-img" href="tel:+79659898988">
+              <img
+                class="header__social-img"
+                src="images/icons/smartphone.svg"
+                alt="smartphone icon"
+              />
+            </a>
+            <a class="phone" href="tel:+79659898988">+7 (965) 989-89-88</a>
+            <p class="header__mobile-text">Круглосуточно</p>
+          </div>
+        </div>
+        <div class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#menu">МЕНЮ</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#useful">ПОЛЕЗНО</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#galery">ГАЛЕРЕЯ</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#delivery">ДОСТАВКА</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#reviews">ОТЗЫВЫ</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__list-link" href="#where">ГДЕ&nbspМЫ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__date"></p>
+          <a href="https://t.me/FV_ladimir" target="_blank" class="logo__fen">
+            Created by
+            <img
+              src="images/logo-fen.jpg"
+              alt="logo fen"
+              class="logo__fen-img"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.fias.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

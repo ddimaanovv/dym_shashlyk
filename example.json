@@ -1,0 +1,25 @@
+{
+  "Products": [
+    {
+      "id": 1,
+      "category": "Food",
+      "img": "123.png",
+      "title": "Shashlik",
+      "price": "120",
+      "count": 3
+    },
+    {
+      "id": 2,
+      "category": "Food",
+      "img": "333.png",
+      "title": "Sauce",
+      "price": "30",
+      "count": 1
+    }
+  ],
+  "Data": {
+    "adress": "Orel, sm. Per 10",
+    "mobile": "89991002345671",
+    "time": "08.12.2022"
+  }
+}
