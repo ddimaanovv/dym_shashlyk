@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom/client";
 import MenuItem from "./components/MenuItem";
 import CategoryItem from "./components/CategoryItem";
-import massItem from "./massItem.json";
+//import massItem from "./massItem.json";
 import massCategoryItem from "./massCategoryItem";
 import basketHandler from "./basketHandler";
 import BasketItem from "./components/BasketItem";
@@ -11,11 +11,11 @@ import sendToBot from "./components/bot";
 
 let basketForOrder = [];
 
+let massItem = []
+
 class App extends Component {
   state = {
-    massMenuItem: massItem.filter(
-      (item) => item.category == massItem[0].category
-    ),
+    massMenuItem: [],
     massMenuCategory: massCategoryItem,
     massBasketElem: [],
     activeCategory: massCategoryItem[0].category,
@@ -200,6 +200,17 @@ class App extends Component {
     basketHandler();
     let applicantForm = document.querySelector(".basket__form");
     applicantForm.addEventListener("submit", handleFormSubmit);
+    let getData = async () =>  {
+      let response = await fetch(`https://648a28de5fa58521cab0f109.mockapi.io/dimShashlik`)
+      massItem = await response.json();
+      this.setState({
+        massMenuItem: massItem.filter(
+          (item) => item.category === massItem[0].category
+        ),
+      });
+
+    }
+    getData()
   }
 }
 
